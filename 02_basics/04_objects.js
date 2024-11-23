@@ -48,13 +48,40 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+//console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); 
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+//console.log(Object.keys(tinderUser)); 
+//console.log(Object.values(tinderUser));
+//console.log(Object.entries(tinderUser));
 //all will return array datatype thus we can access the keys/values/entries via loops
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+//console.log(tinderUser.hasOwnProperty("isLoggedIn"));
 //hasOwnProperty is use to check weather the object has the keywith following name to avoid crashing
+
+
+//------------Destructuring Objects ------------------
+
+const course = {
+    courseName: "JS in hindi",
+    price: 999,
+    courseInstructor: "Hitesh"
+}
+
+//course.courseInstructor //long to access value everytime thus we store its value in teacher
+const {courseInstructor: teacher} = course //syntax
+console.log(teacher);
+
+//----JSON File is a Object---
+// in json keys are also written an strings
+// {
+//     "courseName": "JS in hindi",
+//     "price": 999,
+//     "courseInstructor": "Hitesh"
+// }
+//also a json format
+[
+    {},
+    {},
+    {}
+]
 
