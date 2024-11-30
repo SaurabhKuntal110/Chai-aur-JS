@@ -15,6 +15,7 @@ for (const greet of greetings) {
 }
 
 // Maps
+// map store unique value and remembers the order in which they are inserted
 
 const map = new Map()
 map.set('IN', "India")
